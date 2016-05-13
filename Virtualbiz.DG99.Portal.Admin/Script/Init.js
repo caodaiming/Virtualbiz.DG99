@@ -6,25 +6,30 @@ $(function () {
     //readCookie('style');
 })
 
+
+
 //初始化左侧
 function InitLeftMenu() {
+
+   
     $.ajax({
-        url: 'http://localhost:8081/api/sysmenu/get',
+        url: 'Base/GetSysMenu',//'http://localhost:8081/api/sysmenu/get',
         type: "get",
         dataType: "json",
+      
         success: function (_menus) {
-          
             $("#westreg").empty();
             var menulist = "";
             menulist += '<div class="easyui-accordion" fit="true" border="false">';
             var menus = _menus.menus;
+            console.info(menus);
             for (var i = 0; i < menus.length; i++) {
               
                 menulist += '<div title="' + menus[i].Name + '" data-options="iconCls:\'' + menus[i].Icon + '\'" style="overflow: auto; padding: 5px;">';
                 menulist += '<ul>';
                 for (var k = 0; k < menus[i].Children.length; k++) {
                     menulist += '<li><div><a href="javascript:void(0)" rel="' + menus[i].Children[k].Url + '" ref="' + menus[i].Children[k].ID + '"><span class="' + menus[i].Children[k].Icon + '" style="width: 16px; display: inline-block">&nbsp;</span><span class="navtext">' + menus[i].Children[k].Name + '</span></a></div></li>';
-                }
+               }
 
                 menulist += '</ul></div>';
             }

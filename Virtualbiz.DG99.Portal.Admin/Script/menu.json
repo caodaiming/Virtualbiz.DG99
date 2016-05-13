@@ -1,0 +1,210 @@
+﻿{
+  "menus": [
+    {
+      "ID": 4,
+      "Name": "系统配置",
+      "Url": "",
+      "FatherId": 0,
+      "Icon": "icon-database",
+      "Children": [
+        {
+          "ID": 5,
+          "Name": "期数管理",
+          "Url": "period/index",
+          "FatherId": 4,
+          "Icon": "icon-database",
+          "Children": null
+        },
+        {
+          "ID": 12,
+          "Name": "自",
+          "动赔率设置\",\"Url\":null,\"FatherId\":4,\"Icon\":\"icon-database\",\"Children\":null},{\"ID\":13,\"Name\":\"公告管理\",\"Url\":null",
+          "FatherId": 4,
+          "Icon": "icon-cog",
+          "Children": null
+        },
+        {
+          "ID": 14,
+          "Name": "资讯管理",
+          "Url": null,
+          "FatherId": 4,
+          "Icon": "icon-cog",
+          "Children": null
+        },
+        {
+          "ID": 15,
+          "Name": "初始赔率",
+          "Url": null,
+          "FatherId": 4,
+          "Icon": "icon-cog",
+          "Children": null
+        },
+        {
+          "ID": 16,
+          "Name": "初始额度",
+          "Url": null,
+          "FatherId": 4,
+          "Icon": "icon-news",
+          "Children": null
+        },
+        {
+          "ID": 17,
+          "Name": "初始限额/退水",
+          "Url": null,
+          "FatherId": 4,
+          "Icon": "icon-news",
+          "Children": null
+        },
+        {
+          "ID": 18,
+          "Name": "系统日志",
+          "Url": null,
+          "FatherId": 4,
+          "Icon": "icon-news",
+          "Children": null
+        }
+      ]
+    },
+    {
+      "ID": 6,
+      "Name": "账户管理",
+      "Url": null,
+      "FatherId": 0,
+      "Icon": "icon-cog",
+      "Children": [
+        {
+          "ID": 8,
+          "Name": "会员",
+          "Url": "player/index",
+          "FatherId": 6,
+          "Icon": "icon-database",
+          "Children": null
+        },
+        {
+          "ID": 9,
+          "Name": "代理",
+          "Url": "proxy/index",
+          "FatherId": 6,
+          "Icon": "icon-database",
+          "Children": null
+        },
+        {
+          "ID": 31,
+          "Name": "公司管理",
+          "Url": "Lottery/view/company/index.html",
+          "FatherId": 6,
+          "Icon": "icon-user",
+          "Children": null
+        }
+      ]
+    },
+    {
+      "ID": 10,
+      "Name": "操盘管理",
+      "Url": null,
+      "FatherId": 0,
+      "Icon": "icon-database",
+      "Children": [
+        {
+          "ID": 11,
+          "Name": "操盘",
+          "Url": null,
+          "FatherId": 10,
+          "Icon": "icon-database",
+          "Children": null
+        }
+      ]
+    },
+    {
+      "ID": 19,
+      "Name": "数据备份",
+      "Url": null,
+      "FatherId": 0,
+      "Icon": "icon-computer",
+      "Children": [
+        {
+          "ID": 20,
+          "Name": "订单备份",
+          "Url": null,
+          "FatherId": 19,
+          "Icon": "icon-computer_edit",
+          "Children": null
+        },
+        {
+          "ID": 21,
+          "Name": "注单备份",
+          "Url": null,
+          "FatherId": 19,
+          "Icon": "icon-computer_key",
+          "Children": null
+        },
+        {
+          "ID": 22,
+          "Name": "走飞管理",
+          "Url": null,
+          "FatherId": 19,
+          "Icon": "icon-computer_error",
+          "Children": null
+        },
+        {
+          "ID": 24,
+          "Name": "走飞备份",
+          "Url": null,
+          "FatherId": 19,
+          "Icon": "icon-compress",
+          "Children": null
+        },
+        {
+          "ID": 25,
+          "Name": "未结算注单管理",
+          "Url": null,
+          "FatherId": 19,
+          "Icon": "icon-color_wheel",
+          "Children": null
+        }
+      ]
+    },
+    {
+      "ID": 26,
+      "Name": "注单管理",
+      "Url": null,
+      "FatherId": 0,
+      "Icon": "icon-page_paste",
+      "Children": [
+        {
+          "ID": 27,
+          "Name": "即时注单",
+          "Url": null,
+          "FatherId": 26,
+          "Icon": "icon-page_paintbrush",
+          "Children": null
+        }
+      ]
+    },
+    {
+      "ID": 28,
+      "Name": "统计管理",
+      "Url": null,
+      "FatherId": 0,
+      "Icon": "icon-chart_bar",
+      "Children": [
+        {
+          "ID": 29,
+          "Name": "报表",
+          "Url": null,
+          "FatherId": 28,
+          "Icon": "icon-chart_curve",
+          "Children": null
+        },
+        {
+          "ID": 30,
+          "Name": "结果",
+          "Url": null,
+          "FatherId": 28,
+          "Icon": "icon-chart_line",
+          "Children": null
+        }
+      ]
+    }
+  ]
+}

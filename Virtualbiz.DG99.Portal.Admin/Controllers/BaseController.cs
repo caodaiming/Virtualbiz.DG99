@@ -9,5 +9,13 @@ namespace Virtualbiz.DG99.Portal.Admin.Controllers
 {
    public class BaseController:Controller
     {
+        public JsonResult GetSysMenu()
+        {
+          
+            return Json(new {
+
+                menus = Models.SysMenu.GetSysMenu()
+            },JsonRequestBehavior.AllowGet);
+        }
     }
 }

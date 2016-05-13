@@ -25,7 +25,7 @@ $.parser.auto = false;
 $(function () {
     $.messager.progress({
         text: '页面加载中....',
-        interval: 100
+        interval: 3000
     });
     $.parser.parse(window.document);
     window.setTimeout(function () {
@@ -36,7 +36,7 @@ $(function () {
                     parent.$.messager.progress('close');
                 } catch (e) {
                 }
-            }, 500);
+            }, 5000);
         }
     }, 1);
     $.parser.auto = true;
@@ -691,6 +691,6 @@ $.ajaxSetup({
     type: 'POST',
     error: function (XMLHttpRequest, textStatus, errorThrown) {
         $.messager.progress('close');
-        $.messager.alert('错误', XMLHttpRequest.responseText);
+       // $.messager.alert('错误', XMLHttpRequest.responseText);
     }
 });
